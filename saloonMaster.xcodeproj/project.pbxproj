@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B82A435E200E58F3003714B0 /* adminLoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A435D200E58F3003714B0 /* adminLoginScreen.swift */; };
+		B82F3EE91FFCCD8F00CEF14F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B82F3EE81FFCCD8F00CEF14F /* GoogleService-Info.plist */; };
+		B83F9B4A1FBDB08300C05156 /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F9B491FBDB08300C05156 /* calendarViewController.swift */; };
+		B83F9B4C1FBE957B00C05156 /* appointmentCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F9B4B1FBE957B00C05156 /* appointmentCalendar.swift */; };
+		B88B2A1C1FC53E3500C6C6D2 /* appointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2A1B1FC53E3500C6C6D2 /* appointmentViewController.swift */; };
+		B8904ADC2016E2CC005B4DF2 /* adminSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8904ADB2016E2CC005B4DF2 /* adminSignUp.swift */; };
+		B8904ADE20170087005B4DF2 /* citySelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8904ADD20170087005B4DF2 /* citySelectorController.swift */; };
+		B8904AE0201700A3005B4DF2 /* countrySelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8904ADF201700A3005B4DF2 /* countrySelectorController.swift */; };
+		B8A28B7B1FAD639C00385ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A28B7A1FAD639C00385ACB /* AppDelegate.swift */; };
+		B8A28B7D1FAD639C00385ACB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A28B7C1FAD639C00385ACB /* ViewController.swift */; };
+		B8A28B801FAD639D00385ACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A28B7E1FAD639D00385ACB /* Main.storyboard */; };
+		B8A28B831FAD639D00385ACB /* saloonMaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8A28B811FAD639D00385ACB /* saloonMaster.xcdatamodeld */; };
+		B8A28B851FAD639D00385ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A28B841FAD639D00385ACB /* Assets.xcassets */; };
+		B8A28B881FAD639D00385ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A28B861FAD639D00385ACB /* LaunchScreen.storyboard */; };
+		BACF25A12159BC9855FDFB68 /* Pods_saloonMaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A72A4A146F9EA4A8C8079CD /* Pods_saloonMaster.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A72A4A146F9EA4A8C8079CD /* Pods_saloonMaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_saloonMaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		481BF1A7E1B02AF931438FDF /* Pods-saloonMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saloonMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-saloonMaster/Pods-saloonMaster.release.xcconfig"; sourceTree = "<group>"; };
+		7650B6021D30E2BEB2E7D84A /* Pods-saloonMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saloonMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-saloonMaster/Pods-saloonMaster.debug.xcconfig"; sourceTree = "<group>"; };
+		B82A435D200E58F3003714B0 /* adminLoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminLoginScreen.swift; sourceTree = "<group>"; };
+		B82F3EE81FFCCD8F00CEF14F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B83F9B491FBDB08300C05156 /* calendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
+		B83F9B4B1FBE957B00C05156 /* appointmentCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appointmentCalendar.swift; sourceTree = "<group>"; };
+		B88B2A1B1FC53E3500C6C6D2 /* appointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appointmentViewController.swift; sourceTree = "<group>"; };
+		B8904ADB2016E2CC005B4DF2 /* adminSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminSignUp.swift; sourceTree = "<group>"; };
+		B8904ADD20170087005B4DF2 /* citySelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = citySelectorController.swift; sourceTree = "<group>"; };
+		B8904ADF201700A3005B4DF2 /* countrySelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countrySelectorController.swift; sourceTree = "<group>"; };
+		B8A28B771FAD639C00385ACB /* saloonMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saloonMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A28B7A1FAD639C00385ACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8A28B7C1FAD639C00385ACB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8A28B7F1FAD639D00385ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8A28B821FAD639D00385ACB /* saloonMaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = saloonMaster.xcdatamodel; sourceTree = "<group>"; };
+		B8A28B841FAD639D00385ACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8A28B871FAD639D00385ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8A28B891FAD639D00385ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8A28B741FAD639C00385ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACF25A12159BC9855FDFB68 /* Pods_saloonMaster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CF658B1ED19391A8CADE2E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A72A4A146F9EA4A8C8079CD /* Pods_saloonMaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B82F3EE71FFCCB8700CEF14F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B82F3EE81FFCCD8F00CEF14F /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B8A28B6E1FAD639C00385ACB = {
+			isa = PBXGroup;
+			children = (
+				B82F3EE71FFCCB8700CEF14F /* Resources */,
+				B8A28B791FAD639C00385ACB /* saloonMaster */,
+				B8A28B781FAD639C00385ACB /* Products */,
+				D03811224F3F8C199D9EF4F6 /* Pods */,
+				4CF658B1ED19391A8CADE2E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B8A28B781FAD639C00385ACB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8A28B771FAD639C00385ACB /* saloonMaster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8A28B791FAD639C00385ACB /* saloonMaster */ = {
+			isa = PBXGroup;
+			children = (
+				B8A8F8622008801900D2A6C1 /* Client */,
+				B8A8F85E20087FF600D2A6C1 /* Admin */,
+				B8A28B7A1FAD639C00385ACB /* AppDelegate.swift */,
+				B8A28B7E1FAD639D00385ACB /* Main.storyboard */,
+				B83F9B4B1FBE957B00C05156 /* appointmentCalendar.swift */,
+				B8A28B841FAD639D00385ACB /* Assets.xcassets */,
+				B8A28B861FAD639D00385ACB /* LaunchScreen.storyboard */,
+				B8A28B891FAD639D00385ACB /* Info.plist */,
+				B8A28B811FAD639D00385ACB /* saloonMaster.xcdatamodeld */,
+				B83F9B491FBDB08300C05156 /* calendarViewController.swift */,
+			);
+			path = saloonMaster;
+			sourceTree = "<group>";
+		};
+		B8A8F85E20087FF600D2A6C1 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				B8A8F8612008801000D2A6C1 /* Controller */,
+				B8A8F8602008800A00D2A6C1 /* View */,
+				B8A8F85F2008800200D2A6C1 /* Model */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		B8A8F85F2008800200D2A6C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8A8F8602008800A00D2A6C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8A8F8612008801000D2A6C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B82A435D200E58F3003714B0 /* adminLoginScreen.swift */,
+				B8904ADB2016E2CC005B4DF2 /* adminSignUp.swift */,
+				B8904ADD20170087005B4DF2 /* citySelectorController.swift */,
+				B8904ADF201700A3005B4DF2 /* countrySelectorController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8A8F8622008801900D2A6C1 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				B8A8F8652008804400D2A6C1 /* Controller */,
+				B8A8F8642008803E00D2A6C1 /* View */,
+				B8A8F8632008803600D2A6C1 /* Model */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		B8A8F8632008803600D2A6C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8A8F8642008803E00D2A6C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B88B2A1B1FC53E3500C6C6D2 /* appointmentViewController.swift */,
+				B8A28B7C1FAD639C00385ACB /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8A8F8652008804400D2A6C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D03811224F3F8C199D9EF4F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7650B6021D30E2BEB2E7D84A /* Pods-saloonMaster.debug.xcconfig */,
+				481BF1A7E1B02AF931438FDF /* Pods-saloonMaster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8A28B761FAD639C00385ACB /* saloonMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8A28B8C1FAD639D00385ACB /* Build configuration list for PBXNativeTarget "saloonMaster" */;
+			buildPhases = (
+				3FF2AE84DE1092CCA5C860AA /* [CP] Check Pods Manifest.lock */,
+				B8A28B731FAD639C00385ACB /* Sources */,
+				B8A28B741FAD639C00385ACB /* Frameworks */,
+				B8A28B751FAD639C00385ACB /* Resources */,
+				7DD1D41365B26040C0D722EC /* [CP] Embed Pods Frameworks */,
+				FFDA0EBC1A46026F575B556A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = saloonMaster;
+			productName = saloonMaster;
+			productReference = B8A28B771FAD639C00385ACB /* saloonMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8A28B6F1FAD639C00385ACB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = abdullah;
+				TargetAttributes = {
+					B8A28B761FAD639C00385ACB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B8A28B721FAD639C00385ACB /* Build configuration list for PBXProject "saloonMaster" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8A28B6E1FAD639C00385ACB;
+			productRefGroup = B8A28B781FAD639C00385ACB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8A28B761FAD639C00385ACB /* saloonMaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8A28B751FAD639C00385ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A28B881FAD639D00385ACB /* LaunchScreen.storyboard in Resources */,
+				B82F3EE91FFCCD8F00CEF14F /* GoogleService-Info.plist in Resources */,
+				B8A28B851FAD639D00385ACB /* Assets.xcassets in Resources */,
+				B8A28B801FAD639D00385ACB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FF2AE84DE1092CCA5C860AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-saloonMaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DD1D41365B26040C0D722EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-saloonMaster/Pods-saloonMaster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-saloonMaster/Pods-saloonMaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFDA0EBC1A46026F575B556A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-saloonMaster/Pods-saloonMaster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8A28B731FAD639C00385ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82A435E200E58F3003714B0 /* adminLoginScreen.swift in Sources */,
+				B8904AE0201700A3005B4DF2 /* countrySelectorController.swift in Sources */,
+				B88B2A1C1FC53E3500C6C6D2 /* appointmentViewController.swift in Sources */,
+				B83F9B4A1FBDB08300C05156 /* calendarViewController.swift in Sources */,
+				B8904ADC2016E2CC005B4DF2 /* adminSignUp.swift in Sources */,
+				B8A28B7D1FAD639C00385ACB /* ViewController.swift in Sources */,
+				B8A28B7B1FAD639C00385ACB /* AppDelegate.swift in Sources */,
+				B8A28B831FAD639D00385ACB /* saloonMaster.xcdatamodeld in Sources */,
+				B83F9B4C1FBE957B00C05156 /* appointmentCalendar.swift in Sources */,
+				B8904ADE20170087005B4DF2 /* citySelectorController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B8A28B7E1FAD639D00385ACB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A28B7F1FAD639D00385ACB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8A28B861FAD639D00385ACB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8A28B871FAD639D00385ACB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8A28B8A1FAD639D00385ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8A28B8B1FAD639D00385ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8A28B8D1FAD639D00385ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7650B6021D30E2BEB2E7D84A /* Pods-saloonMaster.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = saloonMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.detruo.saloonMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8A28B8E1FAD639D00385ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481BF1A7E1B02AF931438FDF /* Pods-saloonMaster.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = saloonMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.detruo.saloonMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8A28B721FAD639C00385ACB /* Build configuration list for PBXProject "saloonMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A28B8A1FAD639D00385ACB /* Debug */,
+				B8A28B8B1FAD639D00385ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8A28B8C1FAD639D00385ACB /* Build configuration list for PBXNativeTarget "saloonMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A28B8D1FAD639D00385ACB /* Debug */,
+				B8A28B8E1FAD639D00385ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B8A28B811FAD639D00385ACB /* saloonMaster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B8A28B821FAD639D00385ACB /* saloonMaster.xcdatamodel */,
+			);
+			currentVersion = B8A28B821FAD639D00385ACB /* saloonMaster.xcdatamodel */;
+			path = saloonMaster.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B8A28B6F1FAD639C00385ACB /* Project object */;
+}
