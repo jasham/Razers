@@ -10,6 +10,9 @@ import UIKit
 
 class adminSignUp: UIViewController {
 
+    var cityValue : String!
+    var countryValue : String!
+    
     @IBOutlet weak var countryTextFeild: UITextField!
     @IBOutlet weak var addressTextFeild: UITextView!
     @IBOutlet weak var cityTextFeild: UITextField!
@@ -23,6 +26,12 @@ class adminSignUp: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if let passedCityValue = cityValue {
+            cityTextFeild.text = passedCityValue
+        }
+        if let currentCountryValue = countryValue {
+            countryTextFeild.text = currentCountryValue
+        }
     }
     func alertMessage() {
         let alert = UIAlertController(title: "Error", message: "Enter the missing Feild", preferredStyle: .alert)
@@ -34,6 +43,7 @@ class adminSignUp: UIViewController {
 
     @IBAction func cityPickerView(_ sender: UITextField) {
         self.performSegue(withIdentifier: "citySelectorView", sender: nil)
+        
     }
     
     @IBAction func countryPickerView(_ sender: UITextField) {
@@ -44,11 +54,6 @@ class adminSignUp: UIViewController {
             
             alertMessage()
         }
-        
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+ 
 }

@@ -309,7 +309,9 @@
                     <size key="freeformSize" width="375" height="764"/>
                     <connections>
                         <outlet property="addressTextFeild" destination="oxd-z8-H0b" id="0ak-VU-2dc"/>
+                        <outlet property="cityTextFeild" destination="JJa-ox-fRr" id="LAN-1a-8fQ"/>
                         <outlet property="contactNoTextFeild" destination="arZ-rJ-2Yd" id="dKT-O1-aUc"/>
+                        <outlet property="countryTextFeild" destination="Sjm-ZF-K1s" id="FMO-J2-9mN"/>
                         <outlet property="emailIDTextFeild" destination="sHb-tM-iAa" id="4av-0E-iC9"/>
                         <outlet property="nameTextFeild" destination="2Lx-na-rhM" id="3fb-Ba-VyW"/>
                         <outlet property="passwordTextFeild" destination="jbZ-oA-ia0" id="aiw-4U-urz"/>
@@ -352,18 +354,18 @@
                                 <rect key="frame" x="164" y="464" width="46" height="30"/>
                                 <state key="normal" title="Ok"/>
                                 <connections>
-                                    <segue destination="jXr-II-QV4" kind="show" id="iqI-YJ-DF5"/>
+                                    <segue destination="jXr-II-QV4" kind="show" id="8BY-ki-rAz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8jK-9V-O52" firstAttribute="trailing" secondItem="DQl-5w-Yfz" secondAttribute="trailing" id="KTz-pr-g5m"/>
-                            <constraint firstItem="Tle-vF-Ksz" firstAttribute="top" secondItem="8jK-9V-O52" secondAttribute="bottom" constant="12.5" id="S1E-ZL-UEO"/>
-                            <constraint firstItem="DQl-5w-Yfz" firstAttribute="trailing" secondItem="Tle-vF-Ksz" secondAttribute="trailing" constant="165" id="cGj-Mp-C4S"/>
-                            <constraint firstItem="Tle-vF-Ksz" firstAttribute="leading" secondItem="DQl-5w-Yfz" secondAttribute="leading" constant="164" id="fcg-9X-koY"/>
-                            <constraint firstItem="8jK-9V-O52" firstAttribute="centerY" secondItem="DQl-5w-Yfz" secondAttribute="centerY" id="rBJ-QN-pUV"/>
-                            <constraint firstItem="8jK-9V-O52" firstAttribute="leading" secondItem="DQl-5w-Yfz" secondAttribute="leading" id="x9g-q3-Chm"/>
+                            <constraint firstItem="8jK-9V-O52" firstAttribute="leading" secondItem="DQl-5w-Yfz" secondAttribute="leading" id="2m5-nq-fc1"/>
+                            <constraint firstItem="8jK-9V-O52" firstAttribute="trailing" secondItem="DQl-5w-Yfz" secondAttribute="trailing" id="450-ix-hcB"/>
+                            <constraint firstItem="Tle-vF-Ksz" firstAttribute="top" secondItem="8jK-9V-O52" secondAttribute="bottom" constant="12.5" id="HTQ-Ko-pgE"/>
+                            <constraint firstItem="DQl-5w-Yfz" firstAttribute="trailing" secondItem="Tle-vF-Ksz" secondAttribute="trailing" constant="165" id="MJt-rG-2qb"/>
+                            <constraint firstItem="8jK-9V-O52" firstAttribute="centerY" secondItem="DQl-5w-Yfz" secondAttribute="centerY" id="Uka-u7-p2j"/>
+                            <constraint firstItem="Tle-vF-Ksz" firstAttribute="leading" secondItem="DQl-5w-Yfz" secondAttribute="leading" constant="164" id="s8V-HX-CCu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DQl-5w-Yfz"/>
                     </view>
@@ -373,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1s-kD-gZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="3537"/>
+            <point key="canvasLocation" x="-2143" y="4545"/>
         </scene>
         <!--Confirmed Requests-->
         <scene sceneID="yU0-bX-5Pv">
@@ -1434,30 +1436,45 @@
             <objects>
                 <viewController id="TfS-sd-HcM" customClass="countrySelectorController" customModule="saloonMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pwf-IC-7XM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aye-K8-bpG">
-                                <rect key="frame" x="0.0" y="45" width="375" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aye-K8-bpG">
+                                <rect key="frame" x="0.0" y="235.5" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="TfS-sd-HcM" id="GC6-qx-Ia0"/>
+                                    <outlet property="delegate" destination="TfS-sd-HcM" id="Cf4-GT-At0"/>
+                                </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-9g-mjb">
-                                <rect key="frame" x="164" y="228" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-9g-mjb">
+                                <rect key="frame" x="164" y="464" width="46" height="30"/>
                                 <state key="normal" title="Ok"/>
+                                <connections>
+                                    <segue destination="jXr-II-QV4" kind="show" id="JQd-cv-Cb1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aye-K8-bpG" firstAttribute="trailing" secondItem="xHx-gg-0oK" secondAttribute="trailing" id="4Sp-3m-Jkj"/>
+                            <constraint firstItem="rJj-9g-mjb" firstAttribute="top" secondItem="aye-K8-bpG" secondAttribute="bottom" constant="12.5" id="Dm7-YR-ogJ"/>
+                            <constraint firstItem="aye-K8-bpG" firstAttribute="leading" secondItem="xHx-gg-0oK" secondAttribute="leading" id="ND9-ib-omY"/>
+                            <constraint firstItem="xHx-gg-0oK" firstAttribute="trailing" secondItem="rJj-9g-mjb" secondAttribute="trailing" constant="165" id="ZPk-Ov-3b4"/>
+                            <constraint firstItem="aye-K8-bpG" firstAttribute="centerY" secondItem="xHx-gg-0oK" secondAttribute="centerY" id="uHf-Vh-cjS"/>
+                            <constraint firstItem="rJj-9g-mjb" firstAttribute="leading" secondItem="xHx-gg-0oK" secondAttribute="leading" constant="164" id="vhp-cz-VCV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xHx-gg-0oK"/>
                     </view>
-                    <size key="freeformSize" width="375" height="300"/>
+                    <connections>
+                        <outlet property="countryPickerView" destination="aye-K8-bpG" id="rZm-OZ-R61"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0g3-rB-YTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1370" y="4167"/>
+            <point key="canvasLocation" x="-2975" y="4258"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iqI-YJ-DF5"/>
+        <segue reference="8BY-ki-rAz"/>
     </inferredMetricsTieBreakers>
 </document>

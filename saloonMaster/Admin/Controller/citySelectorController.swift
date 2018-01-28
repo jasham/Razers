@@ -11,8 +11,11 @@ import UIKit
 class citySelectorController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     let city = ["Bhopal","Bombay","Bangalore","Jharkhand","Kashmir","Jabalpur"]
+   
+    var cityValue : String!
+    
     @IBOutlet weak var cityPickerView: UIPickerView!
-    var cityValue : String?
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -23,8 +26,13 @@ class citySelectorController: UIViewController, UIPickerViewDelegate, UIPickerVi
             return city.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        cityValue = city[row]
         return city[row]
     }
-    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        cityValue = city[row]
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let instanceOfAdminSignUp = segue.destination as? adminSignUp else { return }
+        instanceOfAdminSignUp.cityValue = cityValue
+    }
 }
