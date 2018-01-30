@@ -6,6 +6,7 @@
 //  Copyright © 2018 abdullah. All rights reserved.
 //
 
+/*
 import UIKit
 
 class citySelectorController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -13,7 +14,7 @@ class citySelectorController: UIViewController, UIPickerViewDelegate, UIPickerVi
     let city = ["Bhopal","Bombay","Bangalore","Jharkhand","Kashmir","Jabalpur"]
    
     var cityValue : String!
-    
+    var cityValDelegate: AdminSignUPDelegate?
     @IBOutlet weak var cityPickerView: UIPickerView!
  
     override func viewDidLoad() {
@@ -31,8 +32,18 @@ class citySelectorController: UIViewController, UIPickerViewDelegate, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         cityValue = city[row]
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let instanceOfAdminSignUp = segue.destination as? adminSignUp else { return }
-        instanceOfAdminSignUp.cityValue = cityValue
+    
+    @IBAction func btnOKPressed(_ sender: Any) {
+        if cityValue == nil {
+            cityValue = city[0]
+            cityValDelegate?.cityValuePicked(value: cityValue)
+            dismiss(animated: true, completion: nil)
+        }else{
+            cityValDelegate?.cityValuePicked(value: cityValue)
+            dismiss(animated: true, completion: nil)
+            
+        }
     }
+    
 }
+*/

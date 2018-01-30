@@ -5,17 +5,14 @@
 //  Created by abdullah on 1/23/18.
 //  Copyright © 2018 abdullah. All rights reserved.
 //
-
+/*
 import UIKit
 
 class countrySelectorController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    
-
     @IBOutlet weak var countryPickerView: UIPickerView!
-    var country = ["India","Bangladesh","Nepal","Shrilanka","China"]
     var countryValue : String!
-    
+    var countryValDelegate : AdminSignUPDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,11 +30,15 @@ class countrySelectorController: UIViewController, UIPickerViewDataSource, UIPic
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
             countryValue = country[row]
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard  let instanceOfAdminSignUp = segue.destination as? adminSignUp else {        return
+    @IBAction func okButton(_ sender: UIButton) {
+        if countryValue == nil {
+            countryValue = country[0]
+            countryValDelegate?.countryValuePicked(value: countryValue)
+            dismiss(animated: true, completion: nil)
+        }else{
+            countryValDelegate?.countryValuePicked(value: countryValue)
+            dismiss(animated: true, completion: nil)
         }
-        instanceOfAdminSignUp.countryValue = countryValue
     }
-    
-
 }
+*/
