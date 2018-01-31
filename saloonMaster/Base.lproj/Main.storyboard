@@ -50,6 +50,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H3x-NC-J89">
                                                 <rect key="frame" x="170" y="108" width="160" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.1308046144859813" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -58,46 +59,71 @@
                                                     <action selector="usernameAtRunTimeValidation:" destination="jXr-II-QV4" eventType="editingChanged" id="KRw-Of-LrD"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbZ-oA-ia0">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbZ-oA-ia0">
                                                 <rect key="frame" x="170" y="148" width="160" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="jXr-II-QV4" id="Ivv-w6-AAQ"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CiE-kn-U3w">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CiE-kn-U3w">
                                                 <rect key="frame" x="170" y="188" width="160" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="rePasswordValueValidation:" destination="jXr-II-QV4" eventType="editingDidEnd" id="0Lm-KB-pmc"/>
+                                                    <outlet property="delegate" destination="jXr-II-QV4" id="Ryq-gZ-lOb"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Lx-na-rhM">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Lx-na-rhM">
                                                 <rect key="frame" x="170" y="228" width="160" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="validatingNameTextFieldValues:" destination="jXr-II-QV4" eventType="editingDidEnd" id="Xyi-KE-CSa"/>
+                                                    <outlet property="delegate" destination="jXr-II-QV4" id="4d3-gG-sCx"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arZ-rJ-2Yd">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arZ-rJ-2Yd">
                                                 <rect key="frame" x="170" y="268" width="160" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="validatingContactTextFieldValues:" destination="jXr-II-QV4" eventType="editingDidEnd" id="8Ox-Xv-o1g"/>
+                                                    <outlet property="delegate" destination="jXr-II-QV4" id="su6-3N-hdl"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHb-tM-iAa">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHb-tM-iAa">
                                                 <rect key="frame" x="170" y="308" width="160" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="validatingEmailID:" destination="jXr-II-QV4" eventType="editingDidEnd" id="SJz-de-FJp"/>
+                                                    <outlet property="delegate" destination="jXr-II-QV4" id="4ua-3P-e1u"/>
+                                                </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JJa-ox-fRr">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JJa-ox-fRr">
                                                 <rect key="frame" x="170" y="348" width="160" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sjm-ZF-K1s">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sjm-ZF-K1s">
                                                 <rect key="frame" x="170" y="468" width="160" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeo-5G-OLZ">
@@ -154,9 +180,9 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oxd-z8-H0b">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oxd-z8-H0b">
                                                 <rect key="frame" x="170" y="386" width="160" height="65"/>
-                                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.11202784267912773" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -168,7 +194,7 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaQ-iE-Epr">
                                                 <rect key="frame" x="170" y="544" width="34" height="30"/>
-                                                <state key="normal" title="Save"/>
+                                                <state key="normal" title="Submit"/>
                                                 <connections>
                                                     <action selector="saveCheckOperationButton:" destination="jXr-II-QV4" eventType="touchUpInside" id="eZA-iK-YVK"/>
                                                 </connections>
@@ -210,7 +236,7 @@
                                             <constraint firstItem="yRu-wG-rS9" firstAttribute="top" secondItem="bQh-7a-3ZB" secondAttribute="bottom" constant="4" id="MGH-4T-nwE"/>
                                             <constraint firstItem="bQh-7a-3ZB" firstAttribute="top" secondItem="ESs-og-UU8" secondAttribute="bottom" constant="4" id="MZ4-FS-e82"/>
                                             <constraint firstItem="Sjm-ZF-K1s" firstAttribute="top" secondItem="oxd-z8-H0b" secondAttribute="bottom" constant="17" id="MoE-Uj-tX7"/>
-                                            <constraint firstItem="Sjm-ZF-K1s" firstAttribute="leading" relation="lessThanOrEqual" secondItem="86R-i3-2Tm" secondAttribute="trailing" constant="98.5" id="Mqh-7U-2Hc"/>
+                                            <constraint firstItem="Sjm-ZF-K1s" firstAttribute="leading" secondItem="86R-i3-2Tm" secondAttribute="trailing" constant="98.5" id="Mqh-7U-2Hc"/>
                                             <constraint firstItem="arZ-rJ-2Yd" firstAttribute="top" secondItem="2Lx-na-rhM" secondAttribute="bottom" constant="10" id="NfE-eP-gdu"/>
                                             <constraint firstAttribute="trailing" secondItem="Sjm-ZF-K1s" secondAttribute="trailing" constant="45" id="OHA-TD-ISM"/>
                                             <constraint firstAttribute="trailing" secondItem="Aqs-D1-sIF" secondAttribute="trailing" constant="22" id="PXE-Iq-Vpe"/>
