@@ -55,8 +55,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="isValidInput:" destination="jXr-II-QV4" eventType="editingDidEnd" id="U2M-Ng-WSA"/>
                                                     <action selector="usernameAtRunTimeValidation:" destination="jXr-II-QV4" eventType="editingChanged" id="KRw-Of-LrD"/>
+                                                    <outlet property="delegate" destination="jXr-II-QV4" id="MET-zt-6pE"/>
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbZ-oA-ia0">
@@ -76,7 +76,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <connections>
-                                                    <action selector="rePasswordValueValidation:" destination="jXr-II-QV4" eventType="editingDidEnd" id="0Lm-KB-pmc"/>
                                                     <outlet property="delegate" destination="jXr-II-QV4" id="Ryq-gZ-lOb"/>
                                                 </connections>
                                             </textField>
@@ -109,7 +108,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="validatingEmailID:" destination="jXr-II-QV4" eventType="editingDidEnd" id="SJz-de-FJp"/>
                                                     <outlet property="delegate" destination="jXr-II-QV4" id="4ua-3P-e1u"/>
                                                 </connections>
                                             </textField>
@@ -124,6 +122,7 @@
                                                 <rect key="frame" x="170" y="468" width="160" height="30"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeo-5G-OLZ">
@@ -185,6 +184,9 @@
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.19" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="jXr-II-QV4" id="oDw-eA-xHg"/>
+                                                </connections>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqs-D1-sIF">
                                                 <rect key="frame" x="340" y="308" width="13" height="36"/>
@@ -193,7 +195,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaQ-iE-Epr">
-                                                <rect key="frame" x="170" y="544" width="34" height="30"/>
+                                                <rect key="frame" x="170" y="544" width="50" height="30"/>
                                                 <state key="normal" title="Submit"/>
                                                 <connections>
                                                     <action selector="saveCheckOperationButton:" destination="jXr-II-QV4" eventType="touchUpInside" id="eZA-iK-YVK"/>
@@ -277,7 +279,7 @@
                                             <constraint firstItem="Xeo-5G-OLZ" firstAttribute="top" secondItem="xVJ-6O-1YT" secondAttribute="bottom" constant="19" id="tnq-eJ-2QY"/>
                                             <constraint firstItem="C12-AT-bCp" firstAttribute="leading" secondItem="JJa-ox-fRr" secondAttribute="trailing" constant="10" id="u1h-rW-Qag"/>
                                             <constraint firstItem="66D-H7-Jcq" firstAttribute="leading" secondItem="5wv-hd-kPW" secondAttribute="leading" constant="10" id="vHz-av-c4G"/>
-                                            <constraint firstAttribute="trailing" secondItem="KaQ-iE-Epr" secondAttribute="trailing" constant="171" id="vMi-ja-bkG"/>
+                                            <constraint firstAttribute="trailing" secondItem="KaQ-iE-Epr" secondAttribute="trailing" constant="155" id="vMi-ja-bkG"/>
                                             <constraint firstItem="dFU-j3-u4l" firstAttribute="top" secondItem="oYH-Nt-fwj" secondAttribute="bottom" constant="19" id="vaj-La-Gd2"/>
                                             <constraint firstItem="dFU-j3-u4l" firstAttribute="leading" secondItem="5wv-hd-kPW" secondAttribute="leading" constant="10" id="veS-BU-VAL"/>
                                             <constraint firstItem="Aqs-D1-sIF" firstAttribute="leading" secondItem="sHb-tM-iAa" secondAttribute="trailing" constant="10" id="vna-rp-wg1"/>
